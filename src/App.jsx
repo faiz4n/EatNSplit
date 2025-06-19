@@ -49,6 +49,7 @@ export default function App() {
         </div>
         {selected && (
           <FormSplitBill
+            key={selected.id}
             selected={selected}
             setSelected={setSelected}
             friend={selected}
@@ -150,7 +151,7 @@ function FormSplitBill({ friend, friendsList, setFriendsList, setSelected }) {
   const [bill, setBill] = useState("");
   const [payer, setPayer] = useState("me");
 
-  const [myExpense, setMyExpense] = useState(null);
+  const [myExpense, setMyExpense] = useState("");
   const friendExpense = Math.abs(bill - myExpense);
 
   function handleSplitBill(e) {
@@ -168,7 +169,7 @@ function FormSplitBill({ friend, friendsList, setFriendsList, setSelected }) {
       })
     );
 
-    setSelected(null);
+    setSelected("");
   }
   return (
     <form className="form-split-bill" onSubmit={handleSplitBill}>

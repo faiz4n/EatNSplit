@@ -1,12 +1,43 @@
-# React + Vite
+# EatNSplit 🍽️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React app that helps you split bills with friends — because math shouldn't ruin the meal.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Click here to try it out](https://eatnsplit-faizan.netlify.app/)
 
-## Expanding the ESLint configuration
+## 🧩 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Add new friends with custom names and avatars
+- Select a friend to split a bill with
+- Enter total bill, your share, and who paid
+- Dynamically updates who owes what
+- Toggle form visibility (Add Friend / Close)
+- Clean logic-based UI, no alerts or modals
+
+## ⚙️ Tech Stack
+
+- **React.js** – UI components, props, state, JSX
+- **JavaScript (ES6)** – logic, conditionals, input handling
+- **Vite** – fast build tool and dev server
+- **HTML + CSS** – basic styling and layout
+
+## 📦 What I Learned (and Reinforced)
+
+This project didn’t introduce new concepts, but helped me **solidify** core React skills:
+
+- ✅ Managing multiple slices of state with `useState`
+- ✅ Controlled inputs and form handling
+- ✅ Conditional rendering based on real-time logic
+- ✅ Lifting state up and passing props across components
+- ✅ Structuring clean, reusable components (`Friend`, `FormAddFriend`, `FormSplitBill`, `Button`)
+- ✅ Thinking in terms of user interaction → UI → logic → state
+
+## 🛠 How to Run Locally
+
+```bash
+git clone https://github.com/faiz4n/EatNSplit.git
+cd EatNSplit
+npm install
+npm run dev
+```
